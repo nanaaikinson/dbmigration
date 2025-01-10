@@ -8,6 +8,10 @@ return [
         'migrations' => '%%PHINX_CONFIG_DIR%%/migrations',
         'seeds' => '%%PHINX_CONFIG_DIR%%/seeds'
     ],
+    'migration_base_class' => 'Db\EloquentMigrationAdapter',
+    'templates' => [
+        'file' => '%%PHINX_CONFIG_DIR%%/stubs/migration.stub',
+    ],
     'environments' => [
         'default_migration_table' => $_ENV['MIGRATIONS_TABLE'] ?? '__migrations',
         'default_environment' => $_ENV['DB_CONNECTION'],

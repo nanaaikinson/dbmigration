@@ -2,18 +2,17 @@
 
 namespace Db;
 
-// require __DIR__ . '/../bootstrap.php';
-
 use Illuminate\Database\Capsule\Manager as Capsule;
+use Illuminate\Database\Schema\Builder;
 use Phinx\Migration\AbstractMigration;
 
 class EloquentMigrationAdapter extends AbstractMigration
 {
-    /** @var \Illuminate\Database\Capsule\Manager $capsule */
-    public $capsule;
+    // /** @var \Illuminate\Database\Capsule\Manager $capsule */
+    public Capsule $capsule;
 
-    /** @var \Illuminate\Database\Schema\Builder $capsule */
-    public $schema;
+    // /** @var \Illuminate\Database\Schema\Builder $capsule */
+    public Builder $schema;
 
     public function init()
     {

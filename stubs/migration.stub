@@ -1,0 +1,17 @@
+<?php
+
+use Db\EloquentMigrationAdapter;
+use Illuminate\Database\Schema\Blueprint;
+
+final class $className extends EloquentMigrationAdapter
+{
+    public function up(): void {
+        // $this->schema->create('', function (Blueprint $table) {});
+        // $this->schema->table('', function (Blueprint $table) {});
+    }
+
+    public function down(): void {
+        // $this->schema->table('', function (Blueprint $table) {});
+        // $this->schema->dropIfExists('');
+    }
+}
