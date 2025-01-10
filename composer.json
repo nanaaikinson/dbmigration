@@ -10,5 +10,8 @@
       "Db\\": "db/",
       "Migrations\\": "migrations/"
     }
+  },
+  "scripts": {
+    "migration:generate": "php phinx create"
   }
 }
