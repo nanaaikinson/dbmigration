@@ -46,22 +46,26 @@ DB_USERNAME=your_database_user
 DB_PASSWORD=your_database_password
 ```
 
-### 5. To generate a migration file, run one of the following commands. A migration file will be created in migrations folder
+### 5. To generate a migration file, run the following command. A migration file will be created in migrations folder
 
 ```bash
-# Using composer
-composer migration:generate MigrationName
-
-# Using phinx
-./vendor/bin/phinx create MigrationName
+composer migration:create MigrationName
 ```
 
-### 6. Run database migrations. To apply migrations, run one the following commands
+### 6. Run database migrations. To apply migrations, run the following command
+
+For more info
+<a href="https://book.cakephp.org/phinx/0/en/commands.html#the-create-command">https://book.cakephp.org/phinx/0/en/commands.html#the-create-command</a>
 
 ```bash
-# Using composer
 composer migration:migrate
+```
 
-# Using phinx
-./vendor/bin/phinx migrate
+### 7. To rollback, run the following command
+
+For more info
+<a href="https://book.cakephp.org/phinx/0/en/commands.html#the-rollback-command">https://book.cakephp.org/phinx/0/en/commands.html#the-rollback-command</a>
+
+```bash
+composer migration:rollback
 ```
