@@ -19,8 +19,8 @@ DB Migration is a standalone project for handling database migrations using PHP.
 ### 1. Clone project
 
 ```bash
-git clone https://github.com/nanaaikinson/phpmigration.git
-cd phpmigration
+git clone https://github.com/nanaaikinson/dbmigration.git
+cd dbmigration
 ```
 
 ### 2. Install dependencies:
