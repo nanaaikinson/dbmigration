@@ -1,6 +1,6 @@
-# DB MIGRATIONS
+# DB MIGRATION
 
-DB Migrations is a standalone project for handling database migrations using PHP. It provides a simple and flexible way to version and manage your database schema changes in a consistent manner.
+DB Migration is a standalone project for handling database migrations using PHP. It provides a simple and flexible way to version and manage your database schema changes in a consistent manner.
 
 ## Features
 
