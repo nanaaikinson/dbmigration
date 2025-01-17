@@ -8,10 +8,8 @@ use Phinx\Migration\AbstractMigration;
 
 class EloquentMigrationAdapter extends AbstractMigration
 {
-    // /** @var \Illuminate\Database\Capsule\Manager $capsule */
     public Capsule $capsule;
 
-    // /** @var \Illuminate\Database\Schema\Builder $capsule */
     public Builder $schema;
 
     public function init()
