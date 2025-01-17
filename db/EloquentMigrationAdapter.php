@@ -31,8 +31,8 @@ class EloquentMigrationAdapter extends AbstractMigration
                 $config['database'] = $_ENV['DB_DATABASE'];
                 $config['username'] = $_ENV['DB_USERNAME'];
                 $config['password'] = $_ENV['DB_PASSWORD'];
-                $config['charset'] = $_ENV['DB_CHARSET'] ?? 'utf8mb4';
-                $config['collation'] = $ENV_['DB_COLLATION'] ?? 'utf8mb4_unicode_ci';
+                $config['charset'] = 'utf8mb4';
+                $config['collation'] = 'utf8mb4_unicode_ci';
                 break;
 
             case 'pgsql':
@@ -42,7 +42,11 @@ class EloquentMigrationAdapter extends AbstractMigration
                 $config['database'] = $_ENV['DB_DATABASE'];
                 $config['username'] = $_ENV['DB_USERNAME'];
                 $config['password'] = $_ENV['DB_PASSWORD'];
-                $config['charset'] = $_ENV['DB_CHARSET'] ?? 'utf8';
+                $config['charset'] = 'utf8';
+                $config['prefix'] = '';
+                $config['prefix_indexes'] = true;
+                $config['schema'] = 'public';
+                $config['sslmode'] = 'prefer';
                 break;
         }
 
