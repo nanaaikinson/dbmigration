@@ -17,6 +17,7 @@
     "migration:setup": "php filesystem.php",
     "migration:create": "composer migration:setup && phinx create",
     "migration:migrate": "phinx migrate",
+    "migration:migrate-fresh": "phinx rollback -t 0 && phinx migrate",
     "migration:rollback": "phinx rollback",
     "migration:status": "phinx status"
   }
