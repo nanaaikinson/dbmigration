@@ -14,11 +14,11 @@
     }
   },
   "scripts": {
-    "migration:setup": "php filesystem.php",
-    "migration:create": "composer migration:setup && phinx create",
-    "migration:migrate": "phinx migrate",
-    "migration:migrate-fresh": "phinx rollback -t 0 && phinx migrate",
-    "migration:rollback": "phinx rollback",
-    "migration:status": "phinx status"
+    "dbm:setup": "php filesystem.php",
+    "dbm:create": "composer dbm:setup && phinx create",
+    "dbm:migrate": "phinx migrate",
+    "dbm:migrate-fresh": "phinx rollback -t 0 && phinx migrate",
+    "dbm:rollback": "phinx rollback",
+    "dbm:status": "phinx status"
   }
 }

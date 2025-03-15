@@ -44,7 +44,8 @@ class EloquentMigrationAdapter extends AbstractMigration
                 $config['prefix'] = '';
                 $config['prefix_indexes'] = true;
                 $config['schema'] = 'public';
-                $config['sslmode'] = 'prefer';
+                $config['search_path'] = 'public';
+                $config['sslmode'] = $_ENV['DB_SSLMODE'];
                 break;
         }
 
